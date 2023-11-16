@@ -1,27 +1,80 @@
-<style> 
-		table { 
-			border: 1px solid black; 
-			margin-left: auto; 
-			margin-right: auto; 
-		} 
+body {
+    font-family: sans-serif;
+    background-image: url("./137891.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: x-large;
+}
 
-		input[type="button"] { 
-			width: 100%; 
-			padding: 20px 40px; 
-			background-color: green; 
-			color: white; 
-			font-size: 24px; 
-			font-weight: bold; 
-			border: none; 
-			border-radius: 5px; 
-		} 
+.position {
 
-		input[type="text"] { 
-			padding: 20px 30px; 
-			font-size: 24px; 
-			font-weight: bold; 
-			border: none; 
-			border-radius: 5px; 
-			border: 2px solid black; 
-		} 
-	</style> 
+}
+
+h1 {
+    text-align: center;
+    font-size: 24px;
+    color: #eacbcb;
+}
+
+#calcu {
+    margin: 0 auto;
+    width: 50%;
+    background-color: #fff;
+    padding: 10px;
+    border: 2px solid #000000;
+    border-radius: 6px;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+#calcu td {
+    padding: 8px;
+    text-align: center;
+    font-size: larger;
+    border: 2px;
+    border-radius: 6px;
+}
+
+#result {
+    width: 100%;
+    padding: 20px;
+    border: 2px solid #000000;
+    background-color: #fff;
+    border-radius: 6px;
+}
+
+input[type="button"] {
+    width: 120px;
+    height: 75px;
+    background-color: #2196f3;
+    border: 1px solid #000000;
+    cursor: pointer;
+    border-radius: 6px;
+    color: #fff;
+}
+
+input[value="c"] {
+    background-color: #2196f3;
+}
+
+input[value="="] {
+    background-color: #f44336;
+}
+
+input[value="/"] {
+    background-color: #f44336;
+}
+input[value="*"] {
+    background-color: #f44336;
+}
+
+input[value="+"] {
+    background-color: #f44336;
+}
+
+input[value="-"] {
+    background-color: #f44336;
+}
+
+input[type="button"]:hover {
+    background-color: #0d47a1;
+}

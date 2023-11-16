@@ -16,13 +16,13 @@
 		crossorigin="anonymous"
 		referrerpolicy="no-referrer"></script> 
         <link rel="stylesheet" href="calc.css">
-	<!-- For styling -->
+	
 	
 </head> 
 	
-<body> 
-	
-	<!-- Use Table to Create Calculator Structure Design -->
+<body >
+	<h1><center>Calculator</center></h1>
+	<div id="position">
 	<table id="calcu"> 
 		<tr> 
 			<td colspan="3"><input type="text" id="result"></td> 
@@ -64,17 +64,16 @@
 			<td><input type="button" value="." onclick="dis('.')"
 						onkeydown="myFunction(event)"> </td> 
 			
-			<!-- solve function call function solve to evaluate value -->
 			<td><input type="button" value="=" onclick="solve()"> </td> 
 
 			<td><input type="button" value="+" onclick="dis('+')"
 						onkeydown="myFunction(event)"> </td> 
 		</tr> 
 	</table> 
+	</div>
 
 	<script> 
 		
-		// Function that display value 
 		function dis(val) { 
 			document.getElementById("result").value += val 
 		} 
@@ -100,14 +99,12 @@
 			} 
 		} 
 
-		// Function that evaluates the digit and return result 
 		function solve() { 
 			let x = document.getElementById("result").value 
 			let y = math.evaluate(x) 
 			document.getElementById("result").value = y 
 		} 
 
-		// Function that clear the display 
 		function clr() { 
 			document.getElementById("result").value = "" 
 		} 
